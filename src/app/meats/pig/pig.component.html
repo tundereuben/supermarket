@@ -1,0 +1,22 @@
+<div class="container" id="cards">
+
+  <div class="row cards">
+
+    <div class="col-md-12 row-title">
+      <h1 class="text-center text-success">PORK</h1>
+    </div>
+
+    <div *ngFor="let pork of pork" class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="{{ pork.img }}" alt="">
+        <div class="card-body">
+          <p class="card-text text-center lead">
+            <a  class="text-success">{{ pork.name | titlecase }}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</div>

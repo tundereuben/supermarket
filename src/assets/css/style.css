@@ -1,0 +1,37 @@
+body {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+header .site-logo a {
+    color: #fff;
+}
+
+#cards .cards{
+    background: #eee;
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.cards img {
+    height: 250px;
+}
+
+#navigation .nav li a {
+    color: #28A745;
+}
+
+/* .album .row-title {
+    background: green;
+} */
+
+.album .view-more {
+    text-align: right;
+    /* background: green; */
+    margin-bottom: 30px;
+}
+
+.album img {
+    height: 250px;
+    width: 300px;
+}

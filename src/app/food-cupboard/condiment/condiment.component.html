@@ -1,0 +1,22 @@
+<div class="container" id="cards">
+
+  <div class="row cards">
+
+    <div class="col-md-12 row-title">
+      <h1 class="text-center text-success">CONDIMENTS & SAUCES</h1>
+    </div>
+
+    <div *ngFor="let condiment of condiments" class="col-md-4">
+      <div class="card mb-4 shadow-sm">
+        <img src="{{ condiment.img }}" alt="">
+        <div class="card-body">
+          <p class="card-text text-center lead">
+            <a  class="text-success">{{ condiment.name | titlecase }}</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+</div>

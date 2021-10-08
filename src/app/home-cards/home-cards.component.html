@@ -1,0 +1,22 @@
+<div class="container" id="cards">
+    <div *ngFor="let category of categories" class="row cards">
+        <div class="col-md-12 row-title">
+            <h1 class="text-center text-success">{{ category.name | titlecase }}</h1>
+        </div>
+        <div *ngFor="let sub of category.subCategory" class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="{{sub.img}}" alt="">
+                <div class="card-body">
+                    <p class="card-text text-center">
+                      <a [routerLink]="sub.url" class="text-success">{{ sub.name | titlecase }}</a>
+                    </p>
+                  </div>
+            </div>
+        </div>
+        <div class="container col-md-11 view-more">
+            <a href="#" class="text-success"> View more >>></a> 
+          </div>
+    </div>
+</div>
+    
+    
