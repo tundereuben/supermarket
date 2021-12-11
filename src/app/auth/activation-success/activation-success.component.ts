@@ -9,8 +9,6 @@ import {AuthService} from '../../services/auth.service';
 })
 export class ActivationSuccessComponent implements OnInit {
 
-  private userId: string;
-
   constructor(
     private route: ActivatedRoute,
     private authService: AuthService,
@@ -19,8 +17,6 @@ export class ActivationSuccessComponent implements OnInit {
   ngOnInit() {
     this.route.queryParams
       .subscribe(data => {
-        this.userId = data.id;
-        console.log(data);
         this.authService.activateUser(data)
           .subscribe(returnData => console.log(returnData));
       });
