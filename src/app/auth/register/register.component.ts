@@ -43,12 +43,12 @@ export class RegisterComponent implements OnInit {
     const rawValue = this.registerForm.getRawValue();
     this.authService.register({...rawValue})
       .subscribe(data => {
-        this.tokenStorage.saveToken(data.token);
-        this.tokenStorage.saveUser(data);
-        this.isSignUpFailed = false;
-        this.isLoggedIn = true;
-        this.user = data;
-        this.router.navigate(['/checkout']);
+        // this.tokenStorage.saveToken(data.token);
+        // this.tokenStorage.saveUser(data);
+        // this.isSignUpFailed = false;
+        // this.isLoggedIn = true;
+        // this.user = data;
+        this.router.navigate(['/register-success']);
       }, err => {
         this.errorMessage = err.error.message;
         this.isSignUpFailed = true;

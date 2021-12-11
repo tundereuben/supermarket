@@ -15,6 +15,8 @@ import {PaymentComponent} from './payment/payment.component';
 import {AuthGuardService} from './services/auth-guard.service';
 import {PaymentSuccessfulComponent} from './payment/payment-successful/payment-successful.component';
 import {UserDetailsComponent} from './auth/user-details/user-details.component';
+import {RegisterSuccessComponent} from './auth/register-success/register-success.component';
+import {ActivationSuccessComponent} from './auth/activation-success/activation-success.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,6 +31,8 @@ const routes: Routes = [
   { path: 'payment-success', component: PaymentSuccessfulComponent, canActivate: [AuthGuardService]},
 
   { path: 'register', component: RegisterComponent },
+  { path: 'register-success', component: RegisterSuccessComponent },
+  { path: 'activate', component: ActivationSuccessComponent },
   { path: 'login', component: LoginComponent },
 
   { path: '**', component: PageNotFoundComponent },

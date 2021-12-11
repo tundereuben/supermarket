@@ -28,6 +28,8 @@ import {AuthGuardService} from './services/auth-guard.service';
 import { LoginStatusComponent } from './top-header/login-status/login-status.component';
 import { PaymentSuccessfulComponent } from './payment/payment-successful/payment-successful.component';
 import { UserDetailsComponent } from './auth/user-details/user-details.component';
+import { RegisterSuccessComponent } from './auth/register-success/register-success.component';
+import { ActivationSuccessComponent } from './auth/activation-success/activation-success.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { UserDetailsComponent } from './auth/user-details/user-details.component
     PaymentComponent,
     LoginStatusComponent,
     PaymentSuccessfulComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    RegisterSuccessComponent,
+    ActivationSuccessComponent
   ],
   imports: [
     BrowserModule,

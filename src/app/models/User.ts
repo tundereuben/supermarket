@@ -8,6 +8,7 @@ export interface User {
   createdAt?: string;
   updatedAt?: string;
   token?: string;
+  status?: string;
   __v?: number;
   _id?: string;
 }
