@@ -43,26 +43,35 @@ export class UserDetailsComponent implements OnInit {
   }
 
   patchUserDetails() {
+    console.log(this.user);
     this.updateUserForm.patchValue({
       customer: {
         firstName: this.user.firstName,
         lastName: this.user.lastName,
         email: this.user.email,
         phone: this.user.phone
-      },
-      shippingAddress: {
-        street: this.user.shippingAddress.street,
-        city: this.user.shippingAddress.city,
-        state: this.user.shippingAddress.state,
-        country: this.user.shippingAddress.country,
-      },
-      billingAddress: {
-        street: this.user.billingAddress.street,
-        city: this.user.billingAddress.city,
-        state: this.user.billingAddress.state,
-        country: this.user.billingAddress.country,
       }
     });
+    if (this.user.shippingAddress) {
+      this.updateUserForm.patchValue({
+        shippingAddress: {
+          street: this.user.shippingAddress.street,
+          city: this.user.shippingAddress.city,
+          state: this.user.shippingAddress.state,
+          country: this.user.shippingAddress.country,
+        }
+      });
+    }
+    if (this.user.billingAddress) {
+      this.updateUserForm.patchValue({
+        shippingAddress: {
+          street: this.user.billingAddress.street,
+          city: this.user.billingAddress.city,
+          state: this.user.billingAddress.state,
+          country: this.user.billingAddress.country,
+        }
+      });
+    }
   }
 
   createUserForm() {

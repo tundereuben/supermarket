@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
     if (this.tokenStorage.getToken()) {
       this.isLoggedIn = true;
       this.user = this.tokenStorage.getUser().user;
-      this.router.navigate(['search'], { queryParams: { search: '' }});
+      this.router.navigate(['']);
     }
   }
 
@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit {
         this.isLoggedIn = true;
         this.user = this.tokenStorage.getUser().user;
         sessionStorage.setItem('reload', JSON.stringify(true));
-        const url = this.retUrl ? this.retUrl : 'search';
+        const url = this.retUrl ? this.retUrl : '';
         this.router.navigate([`/${url}`], {queryParams: { search: ''}});
       }, err => {
         this.errorMessage = err.error.message;

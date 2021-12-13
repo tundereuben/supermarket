@@ -20,8 +20,6 @@
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
     "@ng-bootstrap/ng-bootstrap": "~5.2.2",
-    "@okta/okta-angular": "^4.1.1",
-    "@okta/okta-signin-widget": "^5.13.1",
     "flutterwave-angular-v3": "^1.2.1",
     "primeng": "^13.0.0",
     "rxjs": "~6.4.0",

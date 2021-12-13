@@ -8,19 +8,19 @@
           <legend class="w-auto">Customer Details</legend>
           <div formGroupName="customer">
             <div class="row">
-              <div class="col">
+              <div class="col-sm-6 col-12 my-1">
                 <input formControlName="firstName" type="text" class="form-control" placeholder="First name" >
               </div>
-              <div class="col">
+              <div class="col-sm-6 col-12 my-1">
                 <input formControlName="lastName" type="text" class="form-control" placeholder="Last name" >
               </div>
             </div>
-            <div class="row my-2">
-              <div class="col">
+            <div class="row">
+              <div class="col-sm-6 col-12 my-1">
                 <input formControlName="phone" type="text" class="form-control" placeholder="Phone Number" >
               </div>
-              <div class="col">
-                <input formControlName="email" type="text" class="form-control" placeholder="Email" >
+              <div class="col-sm-6 col-12 my-1">
+                <input formControlName="email" type="text" class="form-control" placeholder="Email" disabled>
               </div>
             </div>
           </div>
@@ -30,18 +30,18 @@
           <legend class="w-auto">Shipping Address</legend>
           <div formGroupName="shippingAddress">
             <div class="row">
-              <div class="col">
+              <div class="col-sm-4 col-12 my-1">
                 <input formControlName="country" type="text" placeholder="Country" class="form-control" >
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-12 my-1">
                 <input formControlName="state" type="text" placeholder="State" class="form-control">
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-12 my-1">
                 <input formControlName="city" type="text" placeholder="City" class="form-control">
               </div>
             </div>
-            <div class="row my-3">
-              <div class="col">
+            <div class="row">
+              <div class="col my-1">
                 <input formControlName="street" type="text" placeholder="House address" class="form-control">
               </div>
             </div>
@@ -56,23 +56,23 @@
               <span class="m-lg-2"> Billing Address same as Shipping Address</span>
             </div>
             <div class="row">
-              <div class="col">
+              <div class="col-sm-4 col-12 my-1">
                 <input formControlName="country" type="text" placeholder="Country" class="form-control" >
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-12 my-1">
                 <input formControlName="state" type="text" placeholder="State" class="form-control">
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-12 my-1">
                 <input formControlName="city" type="text" placeholder="City" class="form-control">
               </div>
             </div>
-            <div class="row my-3">
-              <div class="col">
+            <div class="row">
+              <div class="col my-1">
                 <input formControlName="street" type="text" placeholder="House address" class="form-control">
               </div>
             </div>
           </div>
-          <button (click)="updateUser()" class="btn btn-success" style="float: right">Update user</button>
+          <button (click)="updateUser()" class="btn btn-success btn-sm-full-width" style="float: right">Update user</button>
         </fieldset>
       </form>
     </div>

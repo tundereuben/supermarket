@@ -61,7 +61,6 @@ import { ActivationSuccessComponent } from './auth/activation-success/activation
     HttpClientModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    NgbPaginationModule,
     FlutterwaveModule
   ],
   providers: [ authInterceptorProviders, AuthGuardService ],

@@ -5,13 +5,22 @@
         <div class="row">
           <p class="text-primary fw-bold lead">Customer Details</p>
           <div class="col-sm-4">
-            <p>Full name <br>{{ user.firstName }} {{ user.lastName }}</p>
+            <p>
+              Full name <br>
+              <span class="fw-bold">{{ user.firstName }} {{ user.lastName }}</span>
+            </p>
           </div>
           <div class="col-sm-4">
-            <p>Phone number <br> {{ user.phone }} </p>
+            <p>
+              Phone number <br>
+              <span class="fw-bold">{{ user.phone }} </span>
+            </p>
           </div>
           <div class="col-sm-4">
-            <p>Email <br>{{ user.email }}</p>
+            <p>
+              Email <br>
+              <span class="fw-bold">{{ user.email }}</span>
+            </p>
           </div>
         </div>
 
@@ -49,8 +58,8 @@
           </div>
         </div>
         <hr>
-        <button (click)="gotoSearch()" type="submit" class="btn btn-primary my-3">Continue shopping</button>
-        <button routerLink="/user-details" type="submit" class="btn btn-outline-primary" style="float: right">
+        <button (click)="gotoSearch()" type="submit" class="btn btn-primary my-3 btn-sm-full-width">Continue shopping</button>
+        <button routerLink="/user-details" type="submit" class="btn btn-outline-primary btn-sm-full-width" style="float: right">
           Update user info
         </button>
       </div>

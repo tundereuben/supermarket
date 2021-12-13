@@ -1972,7 +1972,7 @@ top: -1px;
 
 @media (max-width: 767px) {
   .header .main-menu-search {
-    display: none;
+    display: block;
   }
 }
 
